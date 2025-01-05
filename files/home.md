@@ -3,18 +3,20 @@
 I'm a software engineer passionate about decentralized systems and cryptographic technology.
 I enjoy tackling real world problems and contributing to projects at the forefront of innovation. 👻
 
-last edited: 2024-11-26
+last edited: 2025-01-05
 
 ## Contact
 
-- Email: `ta@lightscale.io`
+- Email: `taehoon@succinct.xyz`
 - Homepage: [https://fakedev9999.github.io/](https://fakedev9999.github.io)
 - Telegram: [@fakedev9999](https://t.me/fakedev9999)
 - Github: [fakedev9999](https://github.com/fakedev9999)
 
 ## Work Experiences
 
-- [2023 - Present] ZK Engineer, [Kroma](https://kroma.network)
+- [2025 - Present] Software Engineer, [Succinct](https://www.succinct.xyz)
+
+- [2023 - 2025] ZK Engineer, [Kroma](https://kroma.network)
 
     - Core contributor of Tachyon, a modular ZK backend library with GPU acceleration
         - Implemented and optimized various ZK primitives including polynomials, evaluations and (I)FFT
