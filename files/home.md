@@ -65,6 +65,10 @@ last edited: 2025-01-21
 
 ## Talks
 
+### 2025
+
+- Speaker at [Ethereum Engineering Group: "OP Succinct and OP Succinct Lite - Turning an OpStack Optimistic Rollup into a zkRollup"](https://www.youtube.com/watch?v=TpgcZWvY-h4)
+
 ### 2024
 
 - Speaker at [Devcon 7 SEA: "Advancing OP Stack to ZK Rollup: Achieving Efficiency and Security with Zero Knowledge Proofs"](https://app.devcon.org/schedule/ZKKUNZ)
