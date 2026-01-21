@@ -3,7 +3,7 @@
 I'm a software engineer passionate about decentralized systems and cryptographic technology.
 I enjoy tackling real world problems and contributing to projects at the forefront of innovation. 👻
 
-last edited: 2025-01-05
+last edited: 2025-01-21
 
 ## Contact
 
@@ -15,6 +15,12 @@ last edited: 2025-01-05
 ## Work Experiences
 
 - [2025 - Present] Software Engineer, [Succinct](https://www.succinct.xyz)
+
+    - Core contributor to OP Succinct, enabling ZK proofs for OP Stack rollups, eliminating the 7-day withdrawal delay and providing fast finality
+    - Supported the launch and scaling of the world's largest ZK rollup (Mantle) securing over $2B TVL with ZK proofs
+    - Led release engineering efforts including v3.3.x releases, coordinating stability fixes and mainnet upgrade cycles across multiple production deployments
+    - Provided direct technical support to enterprise customers (Katana, Mantle, Celo, etc.) for mainnet setup, node operations, and production infrastructure
+    - Contributed to cross-ecosystem integrations including OP Succinct with Celestia DA, Eigen DA and Polygon CDK multistack support
 
 - [2023 - 2025] ZK Engineer, [Kroma](https://kroma.network)
 
