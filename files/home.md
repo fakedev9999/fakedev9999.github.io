@@ -3,7 +3,7 @@
 I'm a software engineer passionate about decentralized systems and cryptographic technology.
 I enjoy tackling real world problems and contributing to projects at the forefront of innovation. 👻
 
-last edited: 2025-01-21
+last edited: 2026-11-09
 
 ## Contact
 
@@ -64,6 +64,10 @@ last edited: 2025-01-21
 - [Simperby](https://github.com/postech-dao/simperby): A blockchain engine for DAOs.
 
 ## Talks
+
+### 2026
+
+- Panelist at [Ethereum Korea One: Genesis: "Where Will the Next ZK Innovation Come From?"](https://www.youtube.com/watch?v=zE9Sr21vc4c)
 
 ### 2025
 
