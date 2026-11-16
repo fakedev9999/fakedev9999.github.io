@@ -1,0 +1,22 @@
+.personal-home main, .home-footer { width:min(720px,calc(100% - 80px)); margin-inline:40px; }
+.personal-home main { margin-top:64px; }
+.personal-home h1 { font-size:26px; font-weight:500; letter-spacing:-.8px; margin-bottom:28px; }
+.personal-home h1::before { content:none; }
+.personal-home .cursor { margin-left:10px; }
+.about p { margin:0 0 22px; }
+.personal-home .contact-links { margin:28px 0 36px; font-size:13px; gap:8px 24px; }
+.selected-talks { border-top:1px dashed var(--line); padding-top:26px; }
+.selected-talks h2 { font-size:13px; font-weight:400; margin-bottom:20px; }
+.selected-talks ul { list-style:none; padding:0; margin:0; }
+.selected-talks li { display:grid; grid-template-columns:48px minmax(0,1fr); gap:16px; margin-bottom:20px; font-size:14px; }
+.selected-talks time { color:var(--muted); font-size:11px; padding-top:3px; }
+.selected-talks li span { display:block; color:var(--muted); font-size:11px; margin-top:4px; }
+.home-footer { margin-top:40px; margin-bottom:32px; color:var(--muted); font-size:10px; }
+@media(max-width:650px) {
+ .personal-home main, .home-footer { width:calc(100% - 40px); margin-inline:20px; }
+ .personal-home main { margin-top:36px; }
+ .personal-home h1 { font-size:24px; margin-bottom:24px; }
+ .personal-home .contact-links { margin:22px 0 28px; gap:4px 22px; }
+ .selected-talks li { font-size:15px; grid-template-columns:40px minmax(0,1fr); gap:12px; }
+}
+@media print { .personal-home main { width:100%; margin:0; } .home-footer { display:none; } }
