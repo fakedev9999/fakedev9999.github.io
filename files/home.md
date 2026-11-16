@@ -3,7 +3,7 @@
 I'm a software engineer passionate about decentralized systems and cryptographic technology.
 I enjoy tackling real world problems and contributing to projects at the forefront of innovation. 👻
 
-last edited: 2026-11-09
+last edited: 2026-11-16
 
 ## Contact
 
