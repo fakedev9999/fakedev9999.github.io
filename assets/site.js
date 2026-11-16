@@ -16,8 +16,11 @@ async function loadProfile() {
     fragment.append(intro, nav);
     let body = intro;
     let index = 0;
+    let contact = false;
     for (const node of [...template.content.children]) {
       if (node.tagName === 'H2') {
+        contact = node.textContent === 'Contact';
+        if (contact) continue;
         index += 1;
         const section = document.createElement('section');
         section.className = 'profile-section';
@@ -40,6 +43,14 @@ async function loadProfile() {
         link.textContent = node.textContent;
         nav.append(link);
       } else {
+        if (contact) {
+          const contacts = document.createElement('nav');
+          contacts.className = 'contact-links';
+          contacts.setAttribute('aria-label', 'Contact');
+          for (const link of [...node.querySelectorAll('a')]) contacts.append(link);
+          intro.insertBefore(contacts, intro.querySelector('.last-edited'));
+          continue;
+        }
         if (node.tagName === 'P' && node.textContent.startsWith('last edited:')) node.className = 'last-edited';
         body.append(node);
       }

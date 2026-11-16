@@ -1,36 +1,34 @@
 # Taehoon Kim
 
-I'm a software engineer passionate about decentralized systems and cryptographic technology.
-I enjoy tackling real world problems and contributing to projects at the forefront of innovation. 👻
+I build ZK proving systems and production rollup infrastructure at [Succinct](https://www.succinct.xyz).
 
 last edited: 2026-11-16
 
 ## Contact
 
-- Email: `taehoon@succinct.xyz`
-- Homepage: [https://fakedev9999.github.io/](https://fakedev9999.github.io)
-- Telegram: [@fakedev9999](https://t.me/fakedev9999)
-- Github: [fakedev9999](https://github.com/fakedev9999)
+- [Email](mailto:taehoon@succinct.xyz)
+- [GitHub](https://github.com/fakedev9999)
+- [Telegram](https://t.me/fakedev9999)
 
-## Work Experiences
+## Experience
 
 - [2025 - Present] Software Engineer, [Succinct](https://www.succinct.xyz)
 
-    - Core contributor to OP Succinct, enabling ZK proofs for OP Stack rollups, eliminating the 7-day withdrawal delay and providing fast finality
-    - Supported the launch and scaling of the world's largest ZK rollup (Mantle) securing over $2B TVL with ZK proofs
-    - Led release engineering efforts including v3.3.x releases, coordinating stability fixes and mainnet upgrade cycles across multiple production deployments
-    - Provided direct technical support to enterprise customers (Katana, Mantle, Celo, etc.) for mainnet setup, node operations, and production infrastructure
+    - Core contributor to [OP Succinct](https://github.com/succinctlabs/op-succinct), bringing **ZK proofs and faster withdrawals** to OP Stack rollups
+    - Supported **Mantle’s ZK rollup launch and scaling**
+    - Led v3.3.x release engineering, coordinating stability fixes and mainnet upgrades across production deployments
+    - Supported Katana, Mantle, Celo and other customers with mainnet setup, node operations and production infrastructure
     - Contributed to cross-ecosystem integrations including OP Succinct with Celestia DA, Eigen DA and Polygon CDK multistack support
 
 - [2023 - 2025] ZK Engineer, [Kroma](https://github.com/kroma-network)
 
     - Core contributor of [Tachyon](https://github.com/kroma-network/tachyon), a modular ZK backend library with GPU acceleration
         - Implemented and optimized various ZK primitives including polynomials, evaluations and (I)FFT
-        - Implemented and optimized Halo2, achieving a speed-up of over 50%
+        - Implemented and optimized Halo2, achieving a **speed-up of over 50%**
 
-    - Designed and implemented zkVM based proving system, with 20x+ cost reduction and 30x+ faster proving time
-        - Designed and implemented zkVM based prover with multi-machine orchestration
-        - Write a PoC program and benchmark against multiple zkVM vendors
+    - Designed and implemented a zkVM-based proving system, with **20x+ cost reduction and 30x+ faster proving time**
+        - Built the zkVM-based prover with multi-machine orchestration
+        - Wrote a PoC program and benchmarked it against multiple zkVM vendors
 
 - [2022 - Present] Simperby Core Team Head, [PDAO](https://dao.postech.ac.kr)
 
@@ -60,6 +58,8 @@ last edited: 2026-11-16
 
 ## Projects
 
+- [OP Succinct](https://github.com/succinctlabs/op-succinct): ZK proofs for OP Stack rollups.
+
 - [Tachyon](https://github.com/kroma-network/tachyon): A modular ZK backend library with GPU acceleration.
 - [Simperby](https://github.com/postech-dao/simperby): A blockchain engine for DAOs.
 
@@ -87,7 +87,7 @@ last edited: 2026-11-16
 
 - [PDAO Seminar: Merkle Tree, MPT, Verkle Tree, State Expiry](https://www.youtube.com/watch?v=pimvZFp_gv0)
 
-## Miscs
+## Other
 
 - [2023] Lead mentor, [OSSCA 2023](https://www.contribution.ac/), Ministry of Science and ICT
 - [2019] President, Kickoff, a soccer club in POSTECH
