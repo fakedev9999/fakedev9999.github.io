@@ -1,18 +1,19 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <title>Taehoon Kim</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f7f7f7">
+<meta name="description" content="Taehoon Kim — software engineer working on decentralized systems and cryptographic technology.">
+<title>Taehoon Kim</title>
+<link rel="stylesheet" href="assets/style.css">
+<script defer src="assets/marked-17.0.5.umd.js"></script>
+<script defer src="assets/site.js"></script>
 </head>
 <body>
-  <div id="content"></div>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script>
-     fetch('files/home.md', { cache: 'no-cache' })
-      .then(response => response.text())
-      .then(text => {
-        document.getElementById('content').innerHTML = marked.parse(text);
-      });
-  </script>
+<a class="skip-link" href="#content">Skip to content</a>
+<header class="topbar"><a class="identity" href="./">TAEHOON KIM<span class="cursor" aria-hidden="true"></span></a><span class="edition">PERSONAL INDEX / 01</span></header>
+<main id="content" tabindex="-1" aria-busy="true"><p class="loading" role="status">Loading index…</p><noscript><p><a href="files/home.md">Read the original profile</a>.</p></noscript></main>
+<footer class="statusbar"><span>END OF INDEX</span><a href="#content">BACK TO TOP ↑</a><a href="files/home.md">VIEW SOURCE ↗</a></footer>
 </body>
 </html>
