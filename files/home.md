@@ -22,9 +22,9 @@ last edited: 2026-11-09
     - Provided direct technical support to enterprise customers (Katana, Mantle, Celo, etc.) for mainnet setup, node operations, and production infrastructure
     - Contributed to cross-ecosystem integrations including OP Succinct with Celestia DA, Eigen DA and Polygon CDK multistack support
 
-- [2023 - 2025] ZK Engineer, [Kroma](https://kroma.network)
+- [2023 - 2025] ZK Engineer, [Kroma](https://github.com/kroma-network)
 
-    - Core contributor of Tachyon, a modular ZK backend library with GPU acceleration
+    - Core contributor of [Tachyon](https://github.com/kroma-network/tachyon), a modular ZK backend library with GPU acceleration
         - Implemented and optimized various ZK primitives including polynomials, evaluations and (I)FFT
         - Implemented and optimized Halo2, achieving a speed-up of over 50%
 
