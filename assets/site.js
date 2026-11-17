@@ -58,7 +58,7 @@ async function loadProfile() {
     main.replaceChildren(fragment);
     if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView();
   } catch {
-    main.innerHTML = '<p role="alert">The profile could not be loaded. <a href="./">Try again</a> or <a href="files/home.md">read the original profile</a>.</p>';
+    main.innerHTML = '<p role="alert">The CV could not be loaded. <a href="cv.html">Try again</a> or <a href="files/home.md">read the original profile</a>.</p>';
   } finally {
     main.setAttribute('aria-busy', 'false');
   }

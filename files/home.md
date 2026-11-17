@@ -2,7 +2,7 @@
 
 I build ZK proving systems and production rollup infrastructure at [Succinct](https://www.succinct.xyz).
 
-last edited: 2026-11-16
+last edited: 2026-11-17
 
 ## Contact
 
@@ -54,7 +54,7 @@ last edited: 2026-11-16
 ## Skills & Interests
 
 - C++, Rust
-- ZK, Cryptography, Blockchain, DAO, Marathon, Memes
+- Proof systems, Distributed systems, Golf, Running
 
 ## Projects
 

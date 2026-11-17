@@ -1,0 +1,10 @@
+{
+  "original_family": "Nanum Brush Script",
+  "source": "https://github.com/google/fonts/tree/main/ofl/nanumbrushscript",
+  "source_file": "https://raw.githubusercontent.com/google/fonts/main/ofl/nanumbrushscript/NanumBrushScript-Regular.ttf",
+  "source_sha256": "27ceaf578c96f594cdf07fe0181b251790acbb746a164e45c1f6473f89911a31",
+  "license": "SIL Open Font License 1.1; see OFL.txt",
+  "modification": "Subset to 김태훈 and converted to WOFF2. Renamed Taehoon Brush to respect reserved font names.",
+  "glyphs": "김태훈",
+  "retrieved": "2026-11-17"
+}

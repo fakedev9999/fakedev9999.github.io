@@ -1,0 +1,23 @@
+{
+  "family": "Inter",
+  "version": "4.1",
+  "source": "https://rsms.me/inter/",
+  "license": "SIL Open Font License 1.1; see Inter-OFL.txt",
+  "modification": "Subset with fonttools to Latin, Latin Extended, punctuation, currency symbols, arrows, and minus. Variable weight and optical size axes and OpenType layout features preserved.",
+  "unicodes": "U+0000-024F,U+1E00-1EFF,U+2000-206F,U+20A0-20CF,U+2190-21FF,U+2212",
+  "retrieved": "2026-11-17",
+  "files": [
+    {
+      "file": "inter-latin-variable.woff2",
+      "source": "https://rsms.me/inter/font-files/InterVariable.woff2?v=4.1",
+      "source_sha256": "693b77d4f32ee9b8bfc995589b5fad5e99adf2832738661f5402f9978429a8e3",
+      "sha256": "180e478182f8e0ca55569ff8578ef728fc1eb1b8de7f6609341ee54f00fc0726"
+    },
+    {
+      "file": "inter-latin-variable-italic.woff2",
+      "source": "https://rsms.me/inter/font-files/InterVariable-Italic.woff2?v=4.1",
+      "source_sha256": "e564f652916db6c139570fefb9524a77c4d48f30c92928de9db19b6b5c7a262a",
+      "sha256": "e280e01de3f3c11a089df4000c9610941d1242f99d683fc96e4b053c3af6acce"
+    }
+  ]
+}

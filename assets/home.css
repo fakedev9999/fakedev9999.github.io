@@ -1,22 +1,179 @@
-.personal-home main, .home-footer { width:min(720px,calc(100% - 80px)); margin-inline:40px; }
-.personal-home main { margin-top:64px; }
-.personal-home h1 { font-size:26px; font-weight:500; letter-spacing:-.8px; margin-bottom:28px; }
-.personal-home h1::before { content:none; }
-.personal-home .cursor { margin-left:10px; }
-.about p { margin:0 0 22px; }
-.personal-home .contact-links { margin:28px 0 36px; font-size:13px; gap:8px 24px; }
-.selected-talks { border-top:1px dashed var(--line); padding-top:26px; }
-.selected-talks h2 { font-size:13px; font-weight:400; margin-bottom:20px; }
-.selected-talks ul { list-style:none; padding:0; margin:0; }
-.selected-talks li { display:grid; grid-template-columns:48px minmax(0,1fr); gap:16px; margin-bottom:20px; font-size:14px; }
-.selected-talks time { color:var(--muted); font-size:11px; padding-top:3px; }
-.selected-talks li span { display:block; color:var(--muted); font-size:11px; margin-top:4px; }
-.home-footer { margin-top:40px; margin-bottom:32px; color:var(--muted); font-size:10px; }
-@media(max-width:650px) {
- .personal-home main, .home-footer { width:calc(100% - 40px); margin-inline:20px; }
- .personal-home main { margin-top:36px; }
- .personal-home h1 { font-size:24px; margin-bottom:24px; }
- .personal-home .contact-links { margin:22px 0 28px; gap:4px 22px; }
- .selected-talks li { font-size:15px; grid-template-columns:40px minmax(0,1fr); gap:12px; }
+/* The large question is a real talk title. The margin holds the related code. */
+@font-face {
+  font-family: "Taehoon Brush";
+  src: url("fonts/taehoon-brush.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  unicode-range: U+AE40, U+D0DC, U+D6C8;
 }
-@media print { .personal-home main { width:100%; margin:0; } .home-footer { display:none; } }
+.personal-home { --highlight: #e5f477; }
+.personal-home a { color: inherit; }
+.personal-home a:hover { color: var(--accent); }
+.page-width { width: min(1120px, calc(100% - 96px)); margin-inline: auto; }
+.masthead { display: flex; align-items: center; justify-content: space-between; gap: 24px; border-bottom: 1px solid var(--ink); padding: 18px 0; }
+.handle { font: 14px/1.5 var(--mono); text-decoration: none; }
+.masthead nav { display: flex; gap: 28px; font-size: 13px; }
+.masthead nav a { display: inline-flex; align-items: center; gap: 7px; min-height: 44px; }
+.intro-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; padding: 48px 0 66px; }
+.name-signature { display: flex; align-items: center; gap: 12px; width: fit-content; max-width: 100%; }
+.nameplate h1 { font: 400 clamp(132px, 12vw, 172px)/1.05 "Taehoon Brush", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; letter-spacing: -.025em; color: var(--accent); white-space: nowrap; }
+.english-name { font: 400 26px/1.25 var(--sans); letter-spacing: -.035em; margin-top: 10px; }
+.mongchi { position: relative; flex-shrink: 0; z-index: 2; }
+.mongchi summary { display: flex; flex-direction: column; align-items: center; gap: 8px; cursor: pointer; list-style: none; font: 10px/1.5 var(--mono); }
+.mongchi summary::-webkit-details-marker { display: none; }
+.mongchi summary img { width: 64px; height: 64px; object-fit: contain; }
+.mongchi summary > span { display: flex; align-items: center; gap: 9px; min-height: 26px; text-decoration: underline; text-underline-offset: 3px; }
+.disclosure-mark::before { content: '+'; font: 18px/1 var(--mono); }
+details[open] > summary .disclosure-mark::before { content: '−'; }
+.mongchi figure { position: absolute; top: calc(100% + 12px); left: -54px; width: 208px; margin: 0; padding: 14px; border: 1px solid var(--ink); background: var(--highlight); box-shadow: 5px 5px 0 var(--ink); }
+.mongchi figure img { width: 180px; height: 180px; }
+.mongchi figcaption { font: 11px/1.4 var(--mono); padding-top: 9px; }
+summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 6px; }
+.current-work { font-size: 22px; line-height: 1.5; letter-spacing: -.025em; }
+.current-work a { text-decoration-color: var(--accent); text-decoration-thickness: 2px; }
+.whereabouts { margin-top: 18px; font-size: 14px; line-height: 1.6; color: var(--muted); }
+.whereabouts span { color: var(--ink); }
+.background { margin-top: 26px; font-size: 15px; }
+.background summary { display: flex; align-items: center; justify-content: space-between; gap: 20px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 12px 0; cursor: pointer; list-style: none; font-size: 13px; }
+.background summary::-webkit-details-marker { display: none; }
+.background > div { padding-top: 20px; }
+.background p + p { margin-top: 18px; }
+.talks { grid-column: 2; grid-row: 1; }
+.work-column { grid-column: 1; grid-row: 1; }
+.index-layout { display: grid; grid-template-columns: minmax(0, .68fr) minmax(0, 1fr); gap: 88px; align-items: start; }
+.section-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; min-height: 44px; border-top: 2px solid var(--ink); padding-top: 13px; margin-bottom: 20px; }
+.section-heading h2, .interests h2 { font: 13px/1.4 var(--mono); font-weight: 400; }
+.section-heading > span, .section-heading > a { font: 11px/1.4 var(--mono); }
+.section-heading > span { color: var(--muted); }
+.section-heading > a { display: inline-flex; align-items: center; min-height: 26px; gap: 8px; }
+.project-list { list-style: none; margin: 0; padding: 0; }
+.project-list > li { border-bottom: 1px solid var(--line); padding: 23px 0 24px; }
+.project-list > li:first-child { padding-top: 3px; }
+.project-list > li:last-child { border-bottom: 0; }
+.project-list h3 { font: 600 30px/1.2 var(--sans); letter-spacing: -.045em; }
+.project-list h3 a { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; text-decoration: none; }
+.project-list h3 span { font-size: 23px; color: var(--accent); }
+.project-list p { font-size: 14px; line-height: 1.6; max-width: 32ch; margin-top: 10px; }
+.cross-reference { display: inline-flex; align-items: center; gap: 9px; min-height: 44px; margin-top: 7px; font: 11px/1.5 var(--mono); text-underline-offset: 4px; }
+.cross-reference span { color: var(--accent); font-size: 16px; }
+.interests { margin-top: 44px; }
+.interests p { margin: 17px 0 0; font: 22px/1.6 var(--sans); text-wrap: pretty; }
+.featured-talk { background: var(--highlight); margin-bottom: 5px; }
+.featured-recording { display: block; text-decoration: none; }
+.personal-home .featured-recording:hover { color: var(--ink); }
+.featured-photo { position: relative; overflow: hidden; }
+/* The owner is the second panelist from the left. Keep the source image intact. */
+.featured-photo img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; transform: scale(2.6); transform-origin: 12.5% 72%; }
+.play-mark { position: absolute; right: 18px; bottom: 18px; display: grid; place-items: center; width: 44px; height: 44px; border: 1px solid var(--paper); border-radius: 50%; background: var(--ink); color: var(--paper); font-size: 15px; padding-left: 2px; }
+.featured-copy { padding: 22px 30px 20px; }
+.talk-meta { display: flex; justify-content: space-between; gap: 20px; font: 11px/1.5 var(--mono); }
+.featured-talk h3 { font: 600 clamp(32px, 3.2vw, 44px)/1.02 var(--sans); letter-spacing: -.04em; margin-top: 24px; }
+.featured-recording:hover h3, .featured-recording:focus-visible h3 { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 5px; }
+.featured-talk .zk { display: block; font-style: italic; }
+.featured-copy > p { font-size: 12px; margin-top: 23px; }
+.recording-label { display: inline-flex; align-items: center; gap: 12px; font: 11px/1.5 var(--mono); margin-top: 16px; text-decoration: underline; text-underline-offset: 3px; }
+.talk-row { display: grid; grid-template-columns: 42px minmax(0, 1fr); gap: 17px; border-bottom: 1px solid var(--line); padding: 26px 0 24px; --preview-width: 160px; --preview-gap: 20px; }
+.talk-row > time { font: 11px/1.5 var(--mono); padding-top: 5px; color: var(--muted); }
+.talk-recording { display: grid; grid-template-columns: var(--preview-width) minmax(0, 1fr); gap: var(--preview-gap); text-decoration: none; align-items: start; }
+.recording-image { position: relative; display: block; overflow: hidden; aspect-ratio: 16 / 9; }
+.recording-image img { position: absolute; max-width: none; height: auto; }
+/* Source regions are documented in assets/talks/sources.json. */
+.recording-image--online img { width: 100%; right: 0; top: 0; }
+.recording-image--devcon img { width: 278.867102%; right: 0; top: -49.963689%; }
+.talk-row h3 { font: 500 22px/1.2 var(--sans); letter-spacing: -.035em; }
+.talk-row h3 span { color: var(--accent); font-size: .8em; white-space: nowrap; }
+.talk-recording:hover h3, .talk-recording:focus-visible h3 { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.talk-row p { font-size: 11px; color: var(--muted); margin-top: 10px; }
+.talk-row .cross-reference { margin-left: calc(var(--preview-width) + var(--preview-gap)); }
+#op-succinct:target, #talk-2025:target { outline: 2px solid var(--accent); outline-offset: 10px; background: var(--highlight); }
+.colophon { border-top: 2px solid var(--ink); margin-top: 68px; padding: 27px 0 26px; display: flex; justify-content: space-between; align-items: center; gap: 32px; }
+.email-address { font: 19px/1.5 var(--sans); letter-spacing: -.025em; }
+.email-address span { margin-left: 10px; color: var(--accent); }
+.colophon > div { display: flex; gap: 30px; align-items: center; color: var(--muted); font: 10px/1.5 var(--mono); }
+.colophon a { display: inline-flex; align-items: center; min-height: 44px; }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .mongchi summary img { transition: transform .16s ease; }
+  .mongchi summary:hover img { transform: rotate(-9deg); }
+}
+@media (max-width: 1100px) {
+  .intro-layout { gap: 48px; }
+  .nameplate h1 { font-size: 132px; }
+  .index-layout { gap: 56px; }
+  .current-work { font-size: 20px; }
+  .featured-copy { padding-inline: 24px; }
+  .talk-row { --preview-width: 130px; --preview-gap: 16px; }
+}
+@media (max-width: 800px) {
+  .page-width { width: calc(100% - 48px); }
+  .intro-layout { gap: 35px; }
+  .nameplate h1 { font-size: 110px; }
+  .name-signature { gap: 10px; }
+  .english-name { font-size: 23px; }
+  .mongchi summary img { width: 54px; height: 54px; }
+  .index-layout { gap: 32px; }
+  .project-list h3 { font-size: 27px; }
+  .featured-talk h3 { font-size: 36px; }
+  .featured-copy { padding-inline: 20px; }
+  .talk-row { gap: 10px; grid-template-columns: 35px minmax(0, 1fr); --preview-width: 104px; --preview-gap: 14px; }
+  .talk-row h3 { font-size: 19px; }
+  .colophon { align-items: start; }
+  .colophon > div { flex-direction: column; gap: 5px; align-items: end; }
+}
+@media (max-width: 650px) {
+  .page-width { width: calc(100% - 40px); }
+  .masthead { gap: 14px; padding: 12px 0; }
+  .handle { font-size: 11px; }
+  .masthead nav { gap: 14px; font-size: 11px; }
+  .masthead nav a { gap: 3px; }
+  .intro-layout { grid-template-columns: 1fr; gap: 32px; padding: 33px 0 39px; }
+  .nameplate h1 { font-size: clamp(112px, 35vw, 152px); }
+  .mongchi summary img { width: 60px; height: 60px; }
+  .mongchi figure { left: auto; right: -16px; }
+  .current-work { font-size: 20px; line-height: 1.55; }
+  .whereabouts span { display: block; }
+  .background { margin-top: 22px; }
+  .background > div { font-size: 16px; }
+  .index-layout { grid-template-columns: 1fr; gap: 38px; }
+  .work-column { display: contents; }
+  .talks { grid-column: 1; grid-row: 1; }
+  .projects { grid-row: 2; }
+  .interests { grid-row: 3; margin-top: 0; padding-top: 20px; border-top: 1px solid var(--line); }
+  .section-heading { margin-bottom: 17px; }
+  .featured-copy { padding: 22px 23px 23px; }
+  .featured-talk h3 { font-size: clamp(34px, 9.8vw, 48px); margin-top: 24px; }
+  .featured-copy > p { margin-top: 20px; }
+  .talk-row { grid-template-columns: 1fr; gap: 12px; padding-block: 25px; --preview-width: 112px; --preview-gap: 16px; }
+  .talk-row h3 { font-size: 21px; }
+  .project-list > li { padding-block: 22px; }
+  .project-list h3 { font-size: 30px; }
+  .project-list p { max-width: none; font-size: 15px; }
+  .interests p { max-width: 32ch; }
+  .colophon { margin-top: 40px; display: block; padding-top: 20px; }
+  .email-address { font-size: 20px; }
+  .colophon > div { flex-direction: row; justify-content: space-between; align-items: center; margin-top: 15px; }
+}
+@media (max-width: 360px) {
+  .masthead { align-items: start; flex-direction: column; gap: 0; }
+  .masthead nav { width: 100%; justify-content: space-between; }
+  .handle { min-height: 36px; display: inline-flex; align-items: center; }
+  .nameplate h1 { font-size: 110px; }
+  .english-name { font-size: 22px; }
+  .mongchi summary img { width: 48px; height: 48px; }
+  .featured-copy { padding-inline: 18px; }
+  .talk-row { --preview-width: 96px; --preview-gap: 14px; }
+  .talk-row h3 { font-size: 20px; }
+  .featured-talk h3 { font-size: 34px; }
+}
+@media print {
+  .personal-home { background: #fff; }
+  .page-width { width: 100%; }
+  .masthead, .mongchi, .colophon { display: none; }
+  .intro-layout { padding: 0 0 30px; }
+  .nameplate h1 { font-size: 70px; }
+  .current-work { font-size: 16px; }
+  .index-layout { gap: 32px; }
+  .featured-talk { background: none; border: 1px solid; }
+  .featured-talk h3 { font-size: 30px; }
+  .project-list > li, .talk-row { break-inside: avoid; }
+}

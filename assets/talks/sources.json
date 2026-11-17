@@ -1,0 +1,51 @@
+{
+  "retrieved": "2026-11-17",
+  "images": [
+    {
+      "file": "2026-ethereum-korea.jpg",
+      "video": "https://www.youtube.com/watch?v=zE9Sr21vc4c",
+      "image": "https://i.ytimg.com/vi/zE9Sr21vc4c/maxresdefault.jpg",
+      "kind": "Published recording thumbnail showing the owner speaking",
+      "publisher": "Ethereum Korea",
+      "framing": "CSS crop centers the second panelist from the left, identified by the owner. Source JPEG is unchanged."
+    },
+    {
+      "file": "2025-op-succinct.jpg",
+      "video": "https://www.youtube.com/watch?v=TpgcZWvY-h4",
+      "kind": "Frame extracted directly from the original 1920x1080 recording",
+      "publisher": "Ethereum & AI Engineering Group",
+      "framing": "Complete screen-sharing frame: title slide with Mongchi, with the owner speaking in the upper-right camera inset. No crop or face enlargement.",
+      "timestamp_seconds": 120,
+      "source_frame_size": [
+        1920,
+        1080
+      ],
+      "css_viewport_region": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "display_treatment": "Original color; no filter."
+    },
+    {
+      "file": "2024-devcon.jpg",
+      "video": "https://www.youtube.com/watch?v=PCvewGIWtMA",
+      "kind": "Published recording preview frame selected by the owner in a screenshot",
+      "publisher": "Ethereum Foundation",
+      "framing": "Restores the owner-preferred pink stage background and hand gesture, displayed in a 16:9 speaker crop. Full source JPEG is unchanged.",
+      "source_frame_size": [
+        1280,
+        720
+      ],
+      "css_viewport_region": [
+        821,
+        129,
+        459,
+        258.1875
+      ],
+      "display_treatment": "Original color; no filter.",
+      "image": "https://i.ytimg.com/vi/PCvewGIWtMA/maxres2.jpg"
+    }
+  ]
+}

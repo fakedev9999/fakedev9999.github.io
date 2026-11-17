@@ -1,40 +1,125 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#f7f7f7">
-<meta name="description" content="Taehoon Kim, software engineer at Succinct. ZK proving systems, OP Succinct Lite, and rollup infrastructure.">
-<title>Taehoon Kim</title>
-<link rel="icon" href="favicon.ico?v=mongchi1" sizes="any">
-<link rel="icon" type="image/png" sizes="256x256" href="assets/mongchi-icon.png?v=1">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=1">
-<link rel="stylesheet" href="assets/style.css?v=3">
-<link rel="stylesheet" href="assets/home.css?v=3">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4f5f0">
+  <meta name="description" content="Taehoon Kim, software engineer at Succinct. ZK proving systems and production rollup infrastructure.">
+  <title>김태훈 · Taehoon Kim</title>
+  <link rel="icon" href="favicon.ico?v=mongchi1" sizes="any">
+  <link rel="icon" type="image/png" sizes="256x256" href="assets/mongchi-icon.png?v=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=1">
+  <link rel="preload" href="assets/fonts/inter-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/style.css?v=8">
+  <link rel="preload" href="assets/fonts/taehoon-brush.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/home.css?v=20">
 </head>
-<body class="personal-home">
-<a class="skip-link" href="#content">Skip to content</a>
-<main id="content" tabindex="-1">
-  <h1>Taehoon Kim<span class="cursor" aria-hidden="true"></span></h1>
-  <div class="about">
-    <p>I’m a software engineer at <a href="https://www.succinct.xyz">Succinct</a>, building ZK applications for rollups securing billions of dollars, with a focus on <a href="https://github.com/succinctlabs/op-succinct">OP Succinct</a>.</p>
-    <p>Previously, I was a ZK engineer at <a href="https://github.com/kroma-network">Kroma</a>, where I worked on <a href="https://github.com/kroma-network/tachyon">Tachyon</a> and zkVM-based proving systems. I have an M.S. in Electrical &amp; Computer Engineering from <a href="https://en.snu.ac.kr">Seoul National University</a> and a B.S. in Computer Science and Engineering from <a href="https://www.postech.ac.kr/eng">POSTECH</a>.</p>
-  </div>
-  <nav class="contact-links" aria-label="Find me elsewhere">
-    <a href="mailto:taehoon@succinct.xyz">Email</a>
-    <a href="https://github.com/fakedev9999">GitHub</a>
-    <a href="https://t.me/fakedev9999">Telegram</a>
-    <a href="cv.html">Full CV</a>
-  </nav>
-  <section class="selected-talks" aria-labelledby="talks">
-    <h2 id="talks">Selected talks</h2>
-    <ul>
-      <li><time datetime="2026">2026</time><div><a href="https://www.youtube.com/watch?v=zE9Sr21vc4c">Where Will the Next ZK Innovation Come From?</a><span>Panel · Ethereum Korea One: Genesis</span></div></li>
-      <li><time datetime="2025">2025</time><div><a href="https://www.youtube.com/watch?v=TpgcZWvY-h4">OP Succinct and OP Succinct Lite</a><span>Ethereum Engineering Group</span></div></li>
-      <li><time datetime="2024">2024</time><div><a href="https://www.youtube.com/watch?v=PCvewGIWtMA">Advancing OP Stack to ZK Rollup</a><span>Devcon 7 SEA</span></div></li>
-    </ul>
-  </section>
-</main>
-<footer class="home-footer">Last edited: <time datetime="2026-11-16">2026-11-16</time></footer>
+<body id="top" class="personal-home">
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="masthead page-width">
+    <span class="handle">fakedev9999</span>
+    <nav aria-label="Contact and CV">
+      <a href="mailto:taehoon@succinct.xyz">Email</a>
+      <a href="https://github.com/fakedev9999">GitHub</a>
+      <a href="https://t.me/fakedev9999">Telegram</a>
+      <a href="cv.html">Full CV <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="content" class="page-width" tabindex="-1">
+    <section class="intro-layout" aria-labelledby="name">
+      <div class="nameplate">
+        <div class="name-signature">
+          <h1 id="name" lang="ko">김태훈</h1>
+          <details class="mongchi">
+            <summary><img src="assets/mongchi-icon.png" width="72" height="72" alt=""><span>Mongchi <span class="disclosure-mark" aria-hidden="true"></span></span></summary>
+            <figure><img src="assets/mongchi-icon.png" width="180" height="180" alt="Mongchi, the dog in this site's favicon"><figcaption>The favicon.</figcaption></figure>
+          </details>
+        </div>
+        <p class="english-name" lang="en">Taehoon Kim</p>
+      </div>
+      <div class="bio">
+        <p class="current-work">I’m a software engineer at <a href="https://www.succinct.xyz">Succinct</a>, building ZK applications for rollups securing billions of dollars, with a focus on <a href="https://github.com/succinctlabs/op-succinct">OP Succinct</a>.</p>
+        <p class="whereabouts"><span>Based in Seoul.</span> Previously in San Francisco, early 2025.</p>
+        <details class="background">
+          <summary>Previously &amp; education <span class="disclosure-mark" aria-hidden="true"></span></summary>
+          <div>
+            <p>Previously, I was a ZK engineer at <a href="https://github.com/kroma-network">Kroma</a>, where I worked on <a href="https://github.com/kroma-network/tachyon">Tachyon</a> and zkVM-based proving systems.</p>
+            <p>I have an M.S. in Electrical &amp; Computer Engineering from <a href="https://en.snu.ac.kr">Seoul National University</a> and a B.S. in Computer Science and Engineering from <a href="https://www.postech.ac.kr/eng">POSTECH</a>.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <div class="index-layout">
+      <section class="talks" aria-labelledby="talks">
+        <div class="section-heading"><h2 id="talks">Selected talks</h2><a href="cv.html#talks">All talks <span aria-hidden="true">↗</span></a></div>
+        <article class="featured-talk" aria-labelledby="talk-2026-title">
+          <a class="featured-recording" href="https://www.youtube.com/watch?v=zE9Sr21vc4c" aria-labelledby="talk-2026-title">
+            <div class="featured-photo">
+              <img src="assets/talks/2026-ethereum-korea.jpg?v=2" width="1280" height="720" alt="" decoding="async">
+              <span class="play-mark" aria-hidden="true">▶</span>
+            </div>
+            <div class="featured-copy">
+              <div class="talk-meta"><time datetime="2026">2026</time><span>Panel</span></div>
+              <h3 id="talk-2026-title">Where Will the Next <span class="zk">ZK Innovation</span> Come From?</h3>
+              <p>Ethereum Korea One: Genesis</p>
+              <span class="recording-label">Watch recording <span aria-hidden="true">↗</span></span>
+            </div>
+          </a>
+        </article>
+        <article class="talk-row" id="talk-2025" aria-labelledby="talk-2025-title" tabindex="-1">
+          <time datetime="2025">2025</time>
+          <div>
+            <a class="talk-recording" href="https://www.youtube.com/watch?v=TpgcZWvY-h4" aria-labelledby="talk-2025-title">
+              <span class="recording-image recording-image--online"><img src="assets/talks/2025-op-succinct.jpg?v=6" width="1920" height="1080" alt="" loading="lazy" decoding="async"></span>
+              <div><h3 id="talk-2025-title">OP Succinct and OP Succinct Lite <span aria-hidden="true">↗</span></h3><p>Ethereum Engineering Group</p></div>
+            </a>
+            <a class="cross-reference" href="#op-succinct"><span aria-hidden="true">↔</span> Code: OP Succinct</a>
+          </div>
+        </article>
+        <article class="talk-row" aria-labelledby="talk-2024-title">
+          <time datetime="2024">2024</time>
+          <div>
+            <a class="talk-recording" href="https://www.youtube.com/watch?v=PCvewGIWtMA" aria-labelledby="talk-2024-title">
+              <span class="recording-image recording-image--devcon"><img src="assets/talks/2024-devcon.jpg?v=6" width="1280" height="720" alt="" loading="lazy" decoding="async"></span>
+              <div><h3 id="talk-2024-title">Advancing OP Stack to ZK Rollup <span aria-hidden="true">↗</span></h3><p>Devcon 7 SEA</p></div>
+            </a>
+          </div>
+        </article>
+      </section>
+      <div class="work-column">
+        <section class="projects" aria-labelledby="work">
+          <div class="section-heading"><h2 id="work">Code</h2><span>C++ / Rust</span></div>
+          <ul class="project-list">
+            <li id="op-succinct" tabindex="-1">
+              <h3><a href="https://github.com/succinctlabs/op-succinct">OP Succinct <span aria-hidden="true">↗</span></a></h3>
+              <p>ZK proofs for OP Stack rollups.</p>
+              <a class="cross-reference" href="#talk-2025"><span aria-hidden="true">↔</span> 2025 talk</a>
+            </li>
+            <li>
+              <h3><a href="https://github.com/kroma-network/tachyon">Tachyon <span aria-hidden="true">↗</span></a></h3>
+              <p>A modular ZK backend with GPU acceleration.</p>
+              <a class="cross-reference" href="cv.html#experience"><span aria-hidden="true">↳</span> Work at Kroma <span aria-hidden="true">↗</span></a>
+            </li>
+            <li>
+              <h3><a href="https://github.com/postech-dao/simperby">Simperby <span aria-hidden="true">↗</span></a></h3>
+              <p>A blockchain engine for DAOs.</p>
+            </li>
+          </ul>
+        </section>
+        <aside class="interests" aria-labelledby="interests">
+          <h2 id="interests">Interests</h2>
+          <p>I’m into proof systems, distributed systems, golf, running, and too many other things to list.</p>
+        </aside>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="colophon page-width">
+    <a class="email-address" href="mailto:taehoon@succinct.xyz">taehoon@succinct.xyz <span aria-hidden="true">↗</span></a>
+    <div><span>Last edited <time datetime="2026-11-17">17 Nov 2026</time></span><a href="#top">Back to top <span aria-hidden="true">↑</span></a></div>
+  </footer>
 </body>
 </html>
